@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="452" viewBox="0 0 720 452" font-family="Menlo, Consolas, monospace" font-size="14">
+  <rect width="720" height="452" rx="10" fill="#101418"/>
+  <circle cx="24" cy="22" r="6" fill="#ff5f56"/>
+  <circle cx="44" cy="22" r="6" fill="#ffbd2e"/>
+  <circle cx="64" cy="22" r="6" fill="#27c93f"/>
+  <text x="360" y="27" fill="#8b949e" text-anchor="middle" font-size="12">hostwild — wildcard dev DNS you run yourself</text>
+  <g fill="#c9d1d9">
+    <text x="24" y="62"><tspan fill="#7ee787">$</tspan> hostwild serve --zone dev.example.test --key "$KEY"</text>
+    <text x="24" y="86"><tspan fill="#79c0ff">hostwild 0.1.0</tspan> — zone dev.example.test</text>
+    <text x="24" y="108">dns   udp <tspan fill="#d2a8ff">127.0.0.1:5353</tspan></text>
+    <text x="24" y="130">dns   tcp <tspan fill="#d2a8ff">127.0.0.1:5353</tspan></text>
+    <text x="24" y="152">http  <tspan fill="#d2a8ff">http://127.0.0.1:8053</tspan></text>
+    <text x="24" y="174" fill="#7ee787">ready</text>
+    <text x="24" y="210"><tspan fill="#7ee787">$</tspan> hostwild query --server 127.0.0.1:5353 app.10.0.0.7.dev.example.test</text>
+    <text x="24" y="234" fill="#8b949e">;; status: NOERROR, answers: 1</text>
+    <text x="24" y="256">app.10.0.0.7.dev.example.test.  60  IN  <tspan fill="#f778ba">A</tspan>  <tspan fill="#7ee787">10.0.0.7</tspan></text>
+    <text x="24" y="292"><tspan fill="#7ee787">$</tspan> hostwild update --key "$KEY" api 192.0.2.44</text>
+    <text x="24" y="316"><tspan fill="#f778ba">A</tspan> api.dev.example.test -&gt; <tspan fill="#7ee787">192.0.2.44</tspan> (serial 2)</text>
+    <text x="24" y="352"><tspan fill="#7ee787">$</tspan> hostwild acme --key "$KEY" set api "$CERTBOT_VALIDATION"</text>
+    <text x="24" y="376"><tspan fill="#f778ba">TXT</tspan> _acme-challenge.api.dev.example.test <tspan fill="#7ee787">set</tspan> (serial 3)</text>
+    <text x="24" y="412" fill="#8b949e">one binary · stdlib only · UDP + TCP · HMAC-signed updates · DNS-01 helper</text>
+  </g>
+</svg>

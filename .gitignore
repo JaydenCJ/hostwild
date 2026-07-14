@@ -1,0 +1,17 @@
+# build artifacts
+/hostwild
+/dist/
+
+# test and coverage output
+*.test
+*.out
+coverage.*
+
+# runtime state
+state.json
+
+# editor noise
+.idea/
+.vscode/
+*.swp
+.DS_Store
